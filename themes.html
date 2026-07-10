@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #eaeaea;
+    padding: 20px;
+}
+
+/* Section titles */
+h1 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Card */
+.card {
+    background: #151821;
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #3a4252;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Title */
+.card p {
+    margin: 10px 0 5px;
+    color: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Official Themes</h1>
+<div class="grid">
+
+<div class="card" onclick="openURL('./themes/Balance/index.html')">
+<img src="./balance.jpg">
+<p>Balance</p>
+</div>
+
+<div class="card" onclick="openURL('./themes/Breeze/index.html')">
+<img src="./breeze.jpg">
+<p>Breeze</p>
+</div>
+
+<div class="card" onclick="openURL('./themes/Elegant/index.html')">
+<img src="./elegant.jpg">
+<p>Elegant</p>
+</div>
+
+<div class="card" onclick="openURL('./themes/Pure/index.html')">
+<img src="./pure.jpg">
+<p>Pure</p>
+</div>
+
+<div class="card" onclick="openURL('./themes/Taste/index.html')">
+<img src="./taste.jpg">
+<p>Taste</p>
+</div>
+
+</div>
+
+<h1>Custom Themes</h1>
+<div class="grid">
+
+<div class="card" onclick="openURL('./themes/New%20Awesome%20Theme/index.html')">
+<img src="./newa.jpg">
+<p>New Awesome Theme</p>
+</div>
+
+<div class="card" onclick="openURL('./themes/Old%20Icons/index.html')">
+<img src="./old.jpg">
+<p>Old Android Icons (With A Spark Wallpaper)</p>
+</div>
+
+<div class="card" onclick="openURL('./themes/Spark%20Theme/index.html')">
+<img src="./SparkDog2.jpg">
+<p>Spark Theme</p>
+</div>
+
+</div>
+
+
+<script>
+function openURL(url) {
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
