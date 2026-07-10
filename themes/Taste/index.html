@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taste</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #eaeaea;
+    padding: 20px;
+}
+
+/* Section titles */
+h1 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Card */
+.card {
+    background: #151821;
+    border: 1px solid #2a2f3a;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #3a4252;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Title */
+.card p {
+    margin: 10px 0 5px;
+    color: #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #00ff00;
+    color: rgb(0, 0, 0);
+}
+
+button:hover {
+    background: #00ff37;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<div class="card">
+<img src="sprite0.jpg">
+<p>Lock Screen</p>
+</div>
+
+<div class="card">
+<img src="sprite1.jpg">
+<p>Home Screen</p>
+</div>
+
+<div class="card">
+<img src="sprite2.jpg">
+<p>Home Screen</p>
+</div>
+
+<button id="getButton" onclick="openURL('./Taste.hwt');">Download</button>
+
+<script>
+    function openURL(url) {
+        window.open(url , "_blank");
+    }
+</script>
+
+
+</div>
+</body>
+</html>
